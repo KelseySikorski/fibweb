@@ -1,0 +1,111 @@
+:root {
+  --unit: calc(100vh/21);
+  --unit1: calc(var(--unit) - 16px);
+  --unit2: calc(var(--unit) * 2 - 16px);
+  --unit3: calc(var(--unit) * 3 - 16px);
+  --unit5: calc(var(--unit) * 5 - 16px);
+  --unit8: calc(var(--unit) * 8 - 16px);
+  --unit13: calc(var(--unit) * 13 - 16px);
+  --unit21: calc(var(--unit) * 21 - 16px);
+}
+
+/*Universal Selector*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Element Selectors*/
+body {
+  background: lightgrey;
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  align-items: center;
+  border: solid 2px red;
+  display: inline-block;
+  display: flex;
+  margin: 0;
+  padding: 6px;
+  position: absolute;
+}
+
+/*Class Selector*/
+.div1 {
+  background: #e971a3;
+  border-color: #90a8a9;
+  font-size: 1em;
+  height: var(--unit1);
+  left: calc((var(--unit) * 24));
+  top: calc((var(--unit) * 15));
+  width: var(--unit1);
+}
+
+.div11 {
+  background: #b6e2fc;
+  border-color: #c86f6c;
+  font-size: 1em;
+  height: var(--unit11);
+  left: calc((var(--unit) * 25));
+  top: calc((var(--unit) * 15));
+  width: var(--unit11);
+}
+
+.div2 {
+  background: #819caa;
+  border-color: #172143;
+  font-size: 2em;
+  height: var(--unit2);
+  left: calc((var(--unit) * 24));
+  top: calc((var(--unit) * 13));
+  width: var(--unit2);
+}
+
+.div3 {
+  background: yellow;
+  border-color: orange;
+  font-size: 3em;
+  height: var(--unit3);
+  left: calc((var(--unit) * 21));
+  top: calc((var(--unit) * 13));
+  width: var(--unit3);
+}
+
+.div8 {
+  background: #819caa;
+  border-color: #172143;
+  font-size: 8em;
+  height: var(--unit8);
+  left: calc((var(--unit) * 26));
+  top: calc((var(--unit) * 13));
+  width: var(--unit8);
+}
+
+.div13 {
+  background: #090909;
+  border-color: #100067;
+  font-size: 13em;
+  height: var(--unit13);
+  left: calc((var(--unit)* 21));
+  width: var(--unit13);
+}
+
+.div21 {
+  background: green;
+  border-color: red;
+  font-size: 21em;
+  height: var(--unit21);
+  width: var(--unit21);
+}
+
+.div5 {
+  background: #a50f29;
+  border-color: #ffe9b5;
+  font-size: 5em;
+  height: var(--unit5);
+  left: calc((var(--unit) * 21));
+  top: calc((var(--unit) * 16));
+  width: var(--unit5);
+}
